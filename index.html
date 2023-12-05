@@ -21,11 +21,11 @@
                 </div>
                 <div class="header-top-rught">
                     <ul class="header-top-list">
-                        <li class="header-top-list__item">Главня</li>
-                        <li class="header-top-list__item">Продукты</li>
-                        <li class="header-top-list__item">О нас</li>
-                        <li class="header-top-list__item">Вопросы</li>
-                        <li class="header-top-list__item">Контакты</li>
+                        <li class="header-top-list__item scrollbtn" data-b=".mainBlock">Главня</li>
+                        <li class="header-top-list__item scrollbtn" data-b=".collection">Продукты</li>
+                        <li class="header-top-list__item scrollbtn" data-b=".connectVk">О нас</li>
+                        <li class="header-top-list__item scrollbtn" data-b=".questions">Вопросы</li>
+                        <li class="header-top-list__item scrollbtn" data-b=".contacts">Контакты</li>
                     </ul>
                 </div>
             </div>
@@ -205,7 +205,7 @@
                             <div class="main-slider-content">
                                 <p class="main-slider-heading">Элегантность</p>
                                 <p class="main-slider-subheading">В каждой детали</p>
-                                <button class="main-button">Заказать</button>
+                                <button class="main-button form-popup-btn">Заказать</button>
                             </div>
                         </div>
                         <div class="swiper-slide main-slider-slide">
@@ -213,7 +213,7 @@
                             <div class="main-slider-content">
                                 <p class="main-slider-heading">Элегантность</p>
                                 <p class="main-slider-subheading">В каждой детали</p>
-                                <button class="main-button">Заказать</button>
+                                <button class="main-button form-popup-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -244,19 +244,19 @@
                     <img src="./media/tovars/1.png" alt="" class="tovarItem__img">
                     <p class="tovarsItem__name">Mariner Round Mirror, Natural</p>
                     <p class="tovarItem__num">#08169</p>
-                    <button class="tovarItem__button">Заказать</button>
+                    <button class="tovarItem__button form-popup-btn">Заказать</button>
                 </div>
                 <div class="tovarsItem">
                     <img src="./media/tovars/2.png" alt="" class="tovarItem__img">
                     <p class="tovarsItem__name">Mariner Round Mirror, Natural</p>
                     <p class="tovarItem__num">#08169</p>
-                    <button class="tovarItem__button">Заказать</button>
+                    <button class="tovarItem__button form-popup-btn">Заказать</button>
                 </div>
                 <div class="tovarsItem">
                     <img src="./media/tovars/3.png" alt="" class="tovarItem__img">
                     <p class="tovarsItem__name">Mariner Round Mirror, Natural</p>
                     <p class="tovarItem__num">#08169</p>
-                    <button class="tovarItem__button">Заказать</button>
+                    <button class="tovarItem__button form-popup-btn">Заказать</button>
                 </div>
             </div>
         </section>
@@ -411,6 +411,20 @@
             <a href="https://t.me/Nelicepriatni" class="myLink">© Создание сайтов</a>
         </div>
     </footer>
+    <div class="form-popup popup">
+        <p class="form-popup-heading">Заполните заявку и мы свяжемся с вами в ближайшее время</p>
+        <div class="form popup-form">
+            <input type="text" class="popup-form-input form-input" placeholder="Ваше ФИО" name="name">
+            <input type="text" class="popup-form-input form-input" placeholder="Ваш телефон" name="phone">
+            <input type="text" class="popup-form-input hidden" name="tovar">
+            <textarea name="mess" class="popup-form-textarea" placeholder="Cообщение"></textarea>
+            <div class="form-polityc">
+                <p class="polityc-text">Отправляя форму вы соглашаетесь с <a href="">политикой
+                        конфиденциальности</a></p>
+                <button class="form-send">Отправить</button>
+            </div>
+        </div>
+    </div>
     <div class="closePopups"></div>
 
 

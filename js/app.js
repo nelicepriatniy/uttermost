@@ -95,3 +95,44 @@ if(burger) {
         closePopups.classList.add('active')
     }
 }
+
+//активации формы в попапе в товарах
+
+const productsBuyBtns = document.querySelectorAll('.form-popup-btn');
+
+if(productsBuyBtns.length > 0) {
+    const popupForm = document.querySelector('.form-popup');
+    for(let i = 0; productsBuyBtns.length > i; i++) {
+        productsBuyBtns[i].onclick = ()=>{
+            popupForm.classList.add('active')
+            closePopups.classList.add('active')
+        }
+    }
+}
+
+// header scrolling
+
+function offsetPosition(element) {
+    var offsetLeft = 0, offsetTop = 0;
+    do {
+        offsetLeft += element.offsetLeft;
+        offsetTop += element.offsetTop;
+    } while (element = element.offsetParent);
+    return offsetTop;
+}
+
+let scrollBtn = document.querySelectorAll('.scrollbtn');  //класс кнопок для скролла
+scrollBtn.forEach(el => {
+    let elem = el;
+    el.addEventListener('click', function () {
+        let data = elem.getAttribute('data-b'); 
+        let block = document.querySelector(data);
+        let offset = offsetPosition(block);
+        window.scrollTo({
+            top: offset -160,
+            behavior: 'smooth',
+            
+        });
+        console.log(offset)
+    })
+});
